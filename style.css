@@ -1,0 +1,78 @@
+
+.imgrotate {
+  transition: transform .7s ease-in-out;
+}
+.imgrotate:hover {
+  transform: rotate(90deg);
+}
+.imgrotate {
+  padding: 20px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: center;
+}
+.imgdisplay {
+  padding: 20px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: center;
+  justify-content: space-between;
+
+}
+/* MEDIA */
+
+@media screen and (max-width: 1000px) {
+.bodymedia{
+  background-color: rgb(198, 201, 185);
+}
+}
+
+
+@media only screen and (min-width:600px) and (max-width:1000px){
+
+  ul, li , header , h1, footer {
+          display: none }
+
+  }
+/* ANIMATION */
+
+.b2 {
+  height: 600px;
+}
+.b2 {
+  background-image: url("img/loupe.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.i1 {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: relative;
+  animation: move 1s infinite alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0,0);
+  }
+  50% {
+    transform: translate(200px,0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.i1 {
+  animation-name: move;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.i1{
+  padding: 20px;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: center;
+}
